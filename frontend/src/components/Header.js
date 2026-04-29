@@ -9,7 +9,7 @@ function Header() {
         <div className="logo">
           <h1>🎗️ Ovarian Cancer Info</h1>
         </div>
-        <nav className="navbar">
+        <nav className="navigation">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/symptoms">Symptoms</Link>

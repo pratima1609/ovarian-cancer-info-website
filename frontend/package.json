@@ -1,12 +1,14 @@
 {
-  "name": "ovarian-cancer-frontend",
-  "version": "0.1.0",
+  "name": "ovarian-cancer-info-frontend",
+  "version": "1.0.0",
+  "description": "React frontend for Ovarian Cancer Informational Website",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.0",
-    "axios": "^1.4.0"
+    "react-router-dom": "^6.8.0",
+    "axios": "^1.3.0",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,8 +32,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "react-scripts": "5.0.1"
   }
 }

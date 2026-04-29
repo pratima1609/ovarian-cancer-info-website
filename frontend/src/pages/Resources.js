@@ -1,192 +1,120 @@
 import React from 'react';
-import '../styles/Resources.css';
+import '../styles/Pages.css';
 
 function Resources() {
   return (
-    <div className="resources">
+    <div className="page resources-page">
       <h1>Resources & Support</h1>
 
-      <section className="info-section">
-        <h2>Important Helplines</h2>
-        <div className="helplines-grid">
-          <div className="helpline-card">
-            <h3>National Cancer Institute</h3>
+      <section className="section">
+        <h2>National Hotlines & Support</h2>
+        <div className="hotlines">
+          <div className="hotline-card">
+            <h4>🏥 National Cancer Institute</h4>
             <p><strong>Phone:</strong> 1-800-4-CANCER (1-800-422-6237)</p>
-            <p><strong>Available:</strong> Monday-Friday, 8am-8pm EST</p>
-            <p>Free, confidential information about cancer and cancer treatments.</p>
+            <p><strong>Hours:</strong> Monday-Friday, 8 AM - 8 PM EST</p>
+            <p>Free information and support from cancer specialists</p>
           </div>
-          <div className="helpline-card">
-            <h3>American Cancer Society</h3>
+          <div className="hotline-card">
+            <h4>🎗️ American Cancer Society</h4>
             <p><strong>Phone:</strong> 1-800-ACS-2345 (1-800-227-2345)</p>
-            <p><strong>Available:</strong> 24 hours a day, 7 days a week</p>
-            <p>Information, support, and referrals to local resources.</p>
+            <p><strong>Hours:</strong> 24/7</p>
+            <p>Information, support groups, transportation, lodging assistance</p>
           </div>
-          <div className="helpline-card">
-            <h3>Cancer Support Community</h3>
+          <div className="hotline-card">
+            <h4>💜 Ovarian Cancer Coalition</h4>
+            <p><strong>Website:</strong> www.ovariancancercoalition.org</p>
+            <p><strong>Phone:</strong> 1-866-OVARIAN (1-866-682-7426)</p>
+            <p>Ovarian cancer-specific support and resources</p>
+          </div>
+          <div className="hotline-card">
+            <h4>❤️ Cancer Support Community</h4>
             <p><strong>Phone:</strong> 1-888-793-9355</p>
-            <p><strong>Website:</strong> www.cancersupportcommunity.org</p>
-            <p>Emotional support and practical help for patients and families.</p>
-          </div>
-          <div className="helpline-card">
-            <h3>National Ovarian Cancer Coalition</h3>
-            <p><strong>Phone:</strong> 1-888-OVARIAN</p>
-            <p><strong>Website:</strong> www.ovarian.org</p>
-            <p>Education, support, and advocacy for ovarian cancer.</p>
+            <p><strong>Hours:</strong> Monday-Friday, 9 AM - 5 PM EST</p>
+            <p>Free emotional support and patient services</p>
           </div>
         </div>
       </section>
 
-      <section className="support-organizations">
-        <h2>Support Organizations</h2>
-        
-        <div className="org-category">
-          <h3>🎯 Ovarian Cancer Specific Organizations</h3>
-          <div className="organizations-list">
-            <div className="org-item">
-              <h4>National Ovarian Cancer Coalition (NOCC)</h4>
-              <p>Provides education, support services, and advocacy for ovarian cancer patients and families.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Ovarian Cancer Institute</h4>
-              <p>Dedicated to research, education, and support for women with ovarian cancer.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Gilda Radner Familial Ovarian Cancer Registry</h4>
-              <p>Registry for families with hereditary ovarian cancer and support services.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Facing Our Risk of Cancer Empowered (FORCE)</h4>
-              <p>Support for people with hereditary cancer predisposition, including BRCA mutations.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-          </div>
+      <section className="section">
+        <h2>Ovarian Cancer Organizations</h2>
+        <div className="organizations">
+          <h4>National Organizations</h4>
+          <ul className="org-list">
+            <li><a href="https://www.ovarianalliance.org" target="_blank" rel="noopener noreferrer">Ovarian Cancer Research Alliance</a> - Research funding and patient support</li>
+            <li><a href="https://www.asco.org" target="_blank" rel="noopener noreferrer">American Society of Clinical Oncology (ASCO)</a> - Provider information and patient resources</li>
+            <li><a href="https://www.pathology.org" target="_blank" rel="noopener noreferrer">College of American Pathologists</a> - Pathology and lab testing information</li>
+            <li><a href="https://www.seaho.org" target="_blank" rel="noopener noreferrer">Sharsheret</a> - Support for Jewish women with ovarian cancer</li>
+            <li><a href="https://www.cancersupport.org" target="_blank" rel="noopener noreferrer">Patient Advocate Foundation</a> - Patient advocacy and financial assistance</li>
+          </ul>
         </div>
+      </section>
 
-        <div className="org-category">
-          <h3>💚 General Cancer Support</h3>
-          <div className="organizations-list">
-            <div className="org-item">
-              <h4>American Cancer Society</h4>
-              <p>Comprehensive cancer information, support programs, and local resources.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Cancer Support Community</h4>
-              <p>Emotional support groups, workshops, and counseling services nationwide.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>National Cancer Institute</h4>
-              <p>Government resource for cancer research, clinical trials, and patient education.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Cancer.Net</h4>
-              <p>Free, evidence-based information about cancer and treatment options.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
+      <section className="section">
+        <h2>Medical Resources</h2>
+        <div className="medical-resources">
+          <div className="resource-item">
+            <h4>🏥 Major Cancer Centers</h4>
+            <ul>
+              <li><a href="https://www.mskcc.org" target="_blank" rel="noopener noreferrer">Memorial Sloan Kettering Cancer Center</a></li>
+              <li><a href="https://www.mdanderson.org" target="_blank" rel="noopener noreferrer">MD Anderson Cancer Center</a></li>
+              <li><a href="https://www.mayoclinic.org" target="_blank" rel="noopener noreferrer">Mayo Clinic</a></li>
+              <li><a href="https://www.cancer.gov/about-nci/organization/ccg" target="_blank" rel="noopener noreferrer">NCI Comprehensive Cancer Centers</a></li>
+            </ul>
           </div>
-        </div>
-
-        <div className="org-category">
-          <h3>👥 Genetic Counseling & Testing</h3>
-          <div className="organizations-list">
-            <div className="org-item">
-              <h4>National Cancer Institute - BRCA Information</h4>
-              <p>Information about genetic testing and hereditary cancer risk.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>National Society of Genetic Counselors</h4>
-              <p>Find a genetic counselor in your area for personalized genetic risk assessment.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>MyRisk: The Genetic Cancer Risk Assessment Tool</h4>
-              <p>Online tool to assess personal cancer risk and hereditary patterns.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>ClinicalTrials.gov</h4>
-              <p>Search for clinical trials testing new treatments and genetic interventions.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="org-category">
-          <h3>📚 Educational & Research Resources</h3>
-          <div className="organizations-list">
-            <div className="org-item">
-              <h4>PubMed Central</h4>
-              <p>Free access to peer-reviewed medical literature and research articles.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>UpToDate Patient Education</h4>
-              <p>Comprehensive, evidence-based medical information for patients.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Medscape Patient Education</h4>
-              <p>Medical information written for patients by healthcare professionals.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
-            <div className="org-item">
-              <h4>Mayo Clinic Patient Resources</h4>
-              <p>Reliable medical information and patient education materials.</p>
-              <a href="#" target="_blank">Visit Website →</a>
-            </div>
+          <div className="resource-item">
+            <h4>💻 Online Communities</h4>
+            <ul>
+              <li><a href="https://www.inspire.com" target="_blank" rel="noopener noreferrer">Inspire Health Community</a> - Online support groups</li>
+              <li><a href="https://www.cancer.org" target="_blank" rel="noopener noreferrer">ACS Cancer Survivors Network</a> - Peer support</li>
+              <li><a href="https://www.cancerchat.org" target="_blank" rel="noopener noreferrer">Cancer Chat UK</a> - Discussion forums</li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section className="recommended-reading">
-        <h2>Recommended Reading</h2>
-        <div className="books-grid">
-          <div className="book-card">
-            <h4>The Cancer Survivor's Almanac</h4>
-            <p>Practical advice and resources for cancer survivors and their families.</p>
-          </div>
-          <div className="book-card">
-            <h4>100 Questions & Answers About Ovarian Cancer</h4>
-            <p>Comprehensive Q&A about diagnosis, treatment, and living with ovarian cancer.</p>
-          </div>
-          <div className="book-card">
-            <h4>When Your Life Isn't Perfect (And You Decide It's OK)</h4>
-            <p>Inspirational stories from ovarian cancer survivors and how they coped.</p>
-          </div>
-          <div className="book-card">
-            <h4>A Patient's Guide to Navigating a Cancer Diagnosis</h4>
-            <p>Step-by-step guide to understanding treatment options and making decisions.</p>
-          </div>
+      <section className="section">
+        <h2>Patient Education Resources</h2>
+        <div className="education-resources">
+          <h4>Recommended Reading</h4>
+          <ul>
+            <li><em>"A Patient's Guide to Ovarian Cancer"</em> - American Cancer Society</li>
+            <li><em>"Living with Ovarian Cancer"</em> - Ovarian Cancer Research Alliance</li>
+            <li><em>"The Ovarian Cancer Book"</em> - Medical and patient perspectives</li>
+            <li><em>"What You Really Need to Know About Cancer"</em> - Comprehensive guide</li>
+          </ul>
+          <h4>Websites</h4>
+          <ul>
+            <li><a href="https://www.cancer.gov" target="_blank" rel="noopener noreferrer">Cancer.gov</a> - NCI official resource</li>
+            <li><a href="https://www.cancer.org" target="_blank" rel="noopener noreferrer">Cancer.org</a> - American Cancer Society</li>
+            <li><a href="https://www.mayoclinic.org" target="_blank" rel="noopener noreferrer">Mayo Clinic Health Information</a></li>
+            <li><a href="https://www.healthline.com" target="_blank" rel="noopener noreferrer">Healthline - Ovarian Cancer Information</a></li>
+          </ul>
         </div>
       </section>
 
-      <section className="info-section">
-        <h2>Online Support Communities</h2>
+      <section className="section">
+        <h2>Financial Assistance Programs</h2>
+        <div className="financial-resources">
+          <ul>
+            <li><strong>Patient Advocate Foundation</strong> - Helps with copayments and treatment costs</li>
+            <li><strong>CancerCare</strong> - Financial assistance for treatment and medications</li>
+            <li><strong>American Cancer Society</strong> - Emergency financial assistance and support services</li>
+            <li><strong>National Association of Free & Charitable Clinics</strong> - Free/reduced-cost care</li>
+            <li><strong>Pharmaceutical Assistance Programs</strong> - Drug manufacturers offer free medications to eligible patients</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Caregiver Support</h2>
+        <p>Resources specifically for family members and caregivers:</p>
         <ul>
-          <li><strong>Reddit:</strong> r/cancer, r/OvarianCancer - Connect with other patients and survivors</li>
-          <li><strong>Facebook Groups:</strong> Many disease-specific support groups available</li>
-          <li><strong>Online Forums:</strong> Patient-to-patient support on disease-specific websites</li>
-          <li><strong>Zoom Support Groups:</strong> Virtual meetings with professional facilitators</li>
-          <li><strong>Peer Support Programs:</strong> Matched with someone with similar experience</li>
-        </ul>
-      </section>
-
-      <section className="info-section">
-        <h2>Finding Local Resources</h2>
-        <p>Your healthcare team can help connect you with local resources including:</p>
-        <ul>
-          <li>Support groups in your area</li>
+          <li>Family caregiver support groups</li>
           <li>Counseling and mental health services</li>
-          <li>Financial assistance programs</li>
-          <li>Nutritional counseling</li>
-          <li>Exercise and rehabilitation programs</li>
-          <li>Hospice and end-of-life care (if needed)</li>
+          <li>Home care and hospice resources</li>
+          <li>Financial and legal planning assistance</li>
+          <li>Respite care services</li>
         </ul>
       </section>
     </div>

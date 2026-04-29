@@ -1,41 +1,41 @@
 import React, { useState } from 'react';
-import '../styles/FAQ.css';
+import '../styles/Pages.css';
 
 function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   const faqs = [
     {
-      question: "What is the difference between benign ovarian cysts and ovarian cancer?",
-      answer: "Benign ovarian cysts are fluid-filled sacs that are very common and usually harmless. They often disappear on their own. Ovarian cancer involves malignant cells that can spread. Imaging tests and blood work can help distinguish between them. Most ovarian cysts are benign."
+      question: "What's the difference between ovarian cysts and ovarian cancer?",
+      answer: "Ovarian cysts are fluid-filled sacs that often appear in the ovaries and are usually benign (non-cancerous). Most cysts go away on their own. Ovarian cancer, however, is the growth of malignant cells in the ovary tissue. Size, appearance on imaging, and blood tests help distinguish between cysts and cancer. Any persistent ovarian mass should be evaluated by a doctor."
     },
     {
       question: "Is ovarian cancer hereditary?",
-      answer: "About 10-15% of ovarian cancers are hereditary, mainly due to BRCA1 and BRCA2 gene mutations. If you have a family history of ovarian or breast cancer, genetic testing and counseling are recommended. Hereditary ovarian cancers tend to occur at younger ages and may respond differently to treatment."
-    },
-    {
-      question: "What is BRCA testing and who should get tested?",
-      answer: "BRCA testing is a blood test that identifies mutations in BRCA1 and BRCA2 genes, which increase cancer risk. You should consider testing if you have a personal or family history of ovarian, breast, or pancreatic cancer, or are of Ashkenazi Jewish descent. A genetic counselor can help determine if testing is appropriate for you."
+      answer: "About 10-15% of ovarian cancers are hereditary, mainly due to BRCA1 or BRCA2 gene mutations. However, 85-90% of ovarian cancers are sporadic (not inherited). If you have a family history of ovarian, breast, or colon cancer, genetic testing and counseling may be recommended. Talk to your doctor about your risk."
     },
     {
       question: "Can ovarian cancer be prevented?",
-      answer: "While there's no guaranteed prevention, certain factors may reduce risk: having children, breastfeeding, using oral contraceptives, and maintaining a healthy weight. For high-risk women, prophylactic surgery (removal of ovaries) may be considered. Regular screening is recommended for high-risk individuals."
+      answer: "While there's no guaranteed way to prevent ovarian cancer, certain factors may reduce risk: oral contraceptive use (reduces risk by 40-50%), pregnancy and breastfeeding, tubal ligation or hysterectomy, maintaining a healthy weight, and regular exercise. High-risk women with BRCA mutations may consider preventive surgery (removal of ovaries and fallopian tubes) after childbearing years."
     },
     {
-      question: "What are the chances of survival for ovarian cancer?",
-      answer: "Five-year survival rates vary by stage: Stage I (90-95%), Stage II (70-80%), Stage III (35-40%), Stage IV (15-20%). Factors affecting survival include stage at diagnosis, cancer grade, age, overall health, and response to treatment. Early detection significantly improves outcomes."
+      question: "What are the survival rates for ovarian cancer?",
+      answer: "Overall 5-year survival rate for ovarian cancer is about 49%. However, survival varies significantly by stage: Stage 1 (90%), Stage 2 (70%), Stage 3 (39%), Stage 4 (17%). Early detection dramatically improves outcomes. Individual survival depends on cancer type, grade, treatment response, and overall health."
     },
     {
-      question: "What is the standard treatment for ovarian cancer?",
-      answer: "Standard treatment typically involves surgery followed by chemotherapy. The goal of surgery is to remove as much cancer as possible (cytoreduction). Chemotherapy is then given to kill remaining cancer cells. Treatment may be followed by targeted therapy or maintenance treatment to prevent recurrence."
+      question: "What treatment options are available?",
+      answer: "Treatment typically combines surgery and chemotherapy, with possible addition of targeted therapy. Surgery aims to remove the tumor and affected tissues. Chemotherapy drugs (usually carboplatin and paclitaxel) target cancer cells throughout the body. Targeted therapies like PARP inhibitors and immunotherapies are increasingly used. Your treatment plan depends on cancer stage and type."
     },
     {
-      question: "How often should high-risk women be screened?",
-      answer: "There is no proven screening test for ovarian cancer in the general population. However, women with BRCA mutations or strong family history may benefit from annual screening with transvaginal ultrasound and CA-125 blood tests. Discuss screening options with your healthcare provider based on your individual risk."
+      question: "Who should be screened for ovarian cancer?",
+      answer: "There are no proven screening tests for average-risk women. Women at high risk (BRCA mutations, strong family history, personal history of breast cancer) may benefit from surveillance with pelvic exams, ultrasound, and CA-125 tests. If you have risk factors, discuss screening options with your doctor."
     },
     {
-      question: "What happens after treatment is completed?",
-      answer: "After treatment, you'll have regular follow-up visits with your oncologist including physical exams and imaging tests. These appointments are important to monitor for recurrence or late effects. Many women also benefit from support groups, counseling, and focus on healthy lifestyle choices including nutrition and exercise."
+      question: "What happens after ovarian cancer treatment?",
+      answer: "After initial treatment (surgery and chemotherapy), regular follow-up is essential. You'll have periodic doctor visits, imaging tests, and blood work to monitor for recurrence. Many patients receive maintenance therapy to extend remission. Side effects of treatment usually improve over time, though some may be long-term. Support groups and counseling can help with recovery."
+    },
+    {
+      question: "Can I have children after ovarian cancer treatment?",
+      answer: "For young women wanting to preserve fertility, discuss options before treatment begins: egg freezing, embryo freezing, or ovarian tissue freezing. Some early-stage cancers may allow ovary-preserving surgery. Chemotherapy can affect fertility. Many women do successfully have children after cancer treatment, and pregnancy itself doesn't increase cancer recurrence risk. Talk to your oncologist about fertility options."
     }
   ];
 
@@ -44,17 +44,17 @@ function FAQ() {
   };
 
   return (
-    <div className="faq">
+    <div className="page faq-page">
       <h1>Frequently Asked Questions</h1>
-
-      <section className="info-section">
+      
+      <section className="section">
         <p>
-          Here are answers to common questions about ovarian cancer. If you have questions not addressed here, 
-          please consult with your healthcare provider or call one of our helplines.
+          Below are answers to common questions about ovarian cancer. 
+          If you don't find the answer you're looking for, please reach out to one of our support resources.
         </p>
       </section>
 
-      <section className="faq-section">
+      <section className="section">
         <div className="faq-list">
           {faqs.map((faq, index) => (
             <div key={index} className="faq-item">
@@ -62,14 +62,12 @@ function FAQ() {
                 className="faq-question"
                 onClick={() => toggleExpanded(index)}
               >
-                <span className="question-text">{faq.question}</span>
-                <span className={`toggle-icon ${expandedIndex === index ? 'expanded' : ''}`}>
-                  ▼
-                </span>
+                <span>{faq.question}</span>
+                <span className={`arrow ${expandedIndex === index ? 'expanded' : ''}`}>▼</span>
               </button>
               {expandedIndex === index && (
                 <div className="faq-answer">
-                  {faq.answer}
+                  <p>{faq.answer}</p>
                 </div>
               )}
             </div>
@@ -77,17 +75,16 @@ function FAQ() {
         </div>
       </section>
 
-      <section className="additional-info">
-        <h2>Still Have Questions?</h2>
+      <section className="section">
+        <h2>Need More Help?</h2>
         <p>
-          If you have additional questions not answered here, please don't hesitate to:
+          If you have other questions or need support, please:
         </p>
         <ul>
-          <li>Contact your healthcare provider or oncologist</li>
-          <li>Call the National Cancer Institute at 1-800-4-CANCER</li>
-          <li>Call the American Cancer Society at 1-800-ACS-2345</li>
-          <li>Visit the <a href="/resources">Resources page</a> for more information</li>
-          <li>Fill out the <a href="/contact">Contact form</a> to reach our team</li>
+          <li>Contact the National Cancer Institute: 1-800-4-CANCER</li>
+          <li>Call American Cancer Society: 1-800-ACS-2345</li>
+          <li>Reach out to Ovarian Cancer Coalition: 1-866-OVARIAN</li>
+          <li>Use our contact form to send us your question</li>
         </ul>
       </section>
     </div>
